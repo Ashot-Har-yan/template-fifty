@@ -1,0 +1,215 @@
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.3fr;
+    grid-template-areas: 
+    "side1 about"
+    "myWork resume"
+    "swingBy contact"
+    "footer footer";
+    max-width: 1300px;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-top: 0;
+    padding: 0;
+}
+#side1{
+    grid-area:side1 ;
+    background-color: black;
+    text-align: center;
+    color: white;
+    height: 700px;
+}
+#about{
+    grid-area:about ;
+    background-color: #607d8b;
+    text-align: center;
+    height: 700px;
+
+}
+#myWork{
+    background-color: #f1f1f1;
+    text-align: center;
+    min-height: 800px;
+
+}
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  
+  .column {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0;
+  }
+  
+  .column img {
+    margin-top:0;
+    vertical-align: middle;
+    width: 100%;
+  }
+#resume{
+    grid-area:resume ;
+    background-color: #3f51b5;
+    text-align: center;
+    min-height: 800px;
+
+}
+#swingBy{
+    grid-area:swingBy ;
+    background-color: #616161;
+    text-align: center;
+    height: 700px;
+    padding: 1.2em;
+
+}
+#contact{
+    grid-area:contact ;
+    background-color: #009688;
+    height: 700px;
+    padding: 1.2em;
+
+}
+footer{
+    grid-area:footer ;
+    background-color: black;
+    padding: 1.2em;
+    color: white;
+    align-items: center;
+}
+footer a {
+    color:white
+}
+@media all and (max-width:650px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1.15fr 1.15fr 1fr 1fr 0.4fr;
+        grid-template-areas:
+        "side1"
+        "about"
+        "myWork"
+        "resume"
+        "swingBy"
+        "contact"
+        "footer"
+    }
+}
+#side1{
+    display: block;
+    width: 100%;
+}
+h1{
+    padding-top: 60px;
+    font-size: 36px;
+    font-family:Arial,sans-serif;
+}
+.home,.myWork,.resume,.contact{
+    text-decoration: none;
+    vertical-align: middle;
+    cursor:pointer;
+    margin: 10px 20px;
+    user-select: none;
+    padding: 16px 32px;
+}
+.home:hover{
+    background-color: #607d8b;
+}
+.myWork:hover{
+    background-color:#009688 ;
+}
+.resume:hover{
+    background-color: #616161;
+}
+.contact:hover{
+    background-color:blueviolet;
+}
+.home a,.myWork a,.resume a,.contact a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+#about{
+    color: white;
+}
+#about .img1{
+    background-image: url(images/avatar3.png);
+    border-radius: 50%;
+    width:50%
+}
+#myWork{
+    min-height: 800px;
+}
+#myWork h1{
+    color: black;
+}
+#resume{
+    color: white;
+}
+table{
+    padding: 0.01em 16px;
+}
+#resume .tdwhite{
+    background-color: white;
+    color: black;
+}
+td{
+    padding: 8px;
+
+}
+#swingBy{
+    color: white;
+}
+.textswing{
+    padding-top: 100px;
+    line-height: 2;
+}
+#contact {
+    color:white;
+    align-items: center;
+ 
+}
+#contact span{
+    opacity:0.60
+}
+.containerContact{
+    background-color: white;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 5px;
+    max-width: 600px;
+    min-height: 300px;
+    color: black;
+    margin-top: 20px;
+}
+#contact .containerContact span{
+    opacity:1
+}
+.containerContact input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: darkgrey;
+}
+.containerContact button{
+    color: #fff;
+    background-color: #009688;
+    float: right;
+    padding: 8px 16px;
+    border: none;
+    margin-inline: 430px;
+    margin-block-start: 10px;
+    cursor: pointer;
+    font:15px Verdana,sans-serif;
+}
+.containerContact button:hover{
+    background-color: #a19797;
+}
